@@ -51,10 +51,10 @@ Inside we will create a summator class:
     #ifndef SUMMATOR_H
     #define SUMMATOR_H
 
-    #include "core/reference.h"
+    #include "core/object/ref_counted.h"
 
-    class Summator : public Reference {
-        GDCLASS(Summator, Reference);
+    class Summator : public RefCounted {
+        GDCLASS(Summator, RefCounted);
 
         int count;
 
